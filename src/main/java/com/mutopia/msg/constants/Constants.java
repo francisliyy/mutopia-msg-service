@@ -25,5 +25,19 @@ public final class Constants {
 	public static final String MSG_SEND_IMMEDIATE = "1";
 	// 消息非即时发送
 	public static final String MSG_SEND_LATER = "0";
+	
+	/**
+	 * 阿里短信发送结果定义
+	 */
+	// 消息发送成功
+	public static final String SMS_SEND_OK = "OK";
+	
+	/**
+	 * 阿里短信发送参数
+	 */
+	//产品名称:云通信短信API产品,开发者无需替换
+    public static final String PRODUCT = "Dysmsapi";
+    //产品域名,开发者无需替换
+    public static final String DOMAIN = "dysmsapi.aliyuncs.com";
 
 }

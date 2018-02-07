@@ -2,7 +2,7 @@ package com.mutopia.msg.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.util.Date;
 
 
 /**
@@ -48,7 +48,7 @@ public class SmsSendLog implements Serializable {
 	private String smsSourceSystem;
 
 	@Column(name="sms_time")
-	private Timestamp smsTime;
+	private Date smsTime;
 
 	public SmsSendLog() {
 	}
@@ -141,11 +141,11 @@ public class SmsSendLog implements Serializable {
 		this.smsSourceSystem = smsSourceSystem;
 	}
 
-	public Timestamp getSmsTime() {
+	public Date getSmsTime() {
 		return this.smsTime;
 	}
 
-	public void setSmsTime(Timestamp smsTime) {
+	public void setSmsTime(Date smsTime) {
 		this.smsTime = smsTime;
 	}
 
