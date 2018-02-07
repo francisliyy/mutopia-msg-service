@@ -66,6 +66,13 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.1</version>
 		</dependency>
+		
+		<!-- 阿里云短信 -->
+		<dependency>
+		  <groupId>com.aliyun</groupId>
+		  <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+		  <version>1.0.0</version>
+		</dependency>
         
 	</dependencies>
 

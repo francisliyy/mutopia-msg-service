@@ -23,3 +23,5 @@ buildNumber.properties
 #mail
 *.eml
 
+#property file
+sms.properties
