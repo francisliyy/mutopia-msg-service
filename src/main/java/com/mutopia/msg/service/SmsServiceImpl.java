@@ -47,7 +47,7 @@ public class SmsServiceImpl implements SmsService {
 		
 		SendSmsResponse result = null;
 		try {
-			result = this.aliSmsClient.sendAliSms(sms.getSmsReceiver(), templateParam);
+			result = this.aliSmsClient.sendAliSms(sms.getSmsReceiver(), templateParam);			
 		} catch (ClientException e) {
 			e.printStackTrace();
 		} finally{
@@ -58,6 +58,18 @@ public class SmsServiceImpl implements SmsService {
 			sms.setSmsTime(new Date());
 			this.smsRepository.save(sms);
 		}
+		/*result = new SendSmsResponse();
+		result.setBizId("111111");
+		result.setCode("OK");
+		result.setMessage("send successful");
+		result.setRequestId("111111");
+		
+		sms.setBizid(result.getBizId());
+		sms.setRequestid(result.getRequestId());
+		sms.setSmsResult(result.getCode());
+		sms.setSmsResultDesc(result.getMessage());
+		sms.setSmsTime(new Date());
+		this.smsRepository.save(sms);*/
 		
 		return result.getCode();
 		
